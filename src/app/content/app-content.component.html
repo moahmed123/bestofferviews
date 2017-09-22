@@ -1,0 +1,16 @@
+<div id="loading" *ngIf="loading">
+    <img style="float: right;" *ngIf="loading" src='../assets/images/loading.gif' />
+</div>
+<div *ngFor="let mobile of mobiles">
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <img alt="100%x200" data-src="holder.js/100%x200" src="{{mobile.img}}"
+                data-holder-rendered="true" style="height: 100px; width: 50px; display: block;">
+            <div class="caption">
+                <h3>{{mobile.brandname}}</h3>
+                <p>{{mobile.brand}}</p>
+                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            </div>
+        </div>
+    </div> 
+</div> 
